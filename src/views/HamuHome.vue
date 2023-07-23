@@ -98,7 +98,10 @@ export default {
     // Your methods here
   },
   mounted() {
-    // Your mounted code here
+    this.$toast.$success("成功", "这是一条成功的信息", 5000)
+    this.$toast.$error("成功", "这是一条成功的信息", 5000)
+    this.$toast.$warning("成功", "这是一条成功的信息", 5000)
+    this.$toast.$info("成功", "这是一条成功的信息", 5000)
   }
 }
 </script>

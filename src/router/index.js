@@ -5,6 +5,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    redirect: "/home"
+  },
+  {
     path: "/home",
     name: "home",
     component: () => import("@/views/HamuHome.vue")
