@@ -12,7 +12,12 @@ const routes = [
     path: "/home",
     name: "home",
     component: () => import("@/views/HamuHome.vue")
-  }
+  },
+  {
+    path: "/player-login",
+    name: "player-login",
+    component: () => import("@/components/PlayerLogin.vue")
+  },
 ];
 
 const router = new VueRouter({

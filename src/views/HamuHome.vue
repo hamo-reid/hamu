@@ -5,6 +5,9 @@
         <div class="logo">
           Logo
         </div>
+        <dev @click="$router.push('/player-login')" class="player-login">
+          选手登录
+        </dev>
       </div>
       <nav>
 
@@ -114,6 +117,8 @@ footer {
 }
 
 header .header-bar {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   height: 56px;
@@ -123,6 +128,14 @@ header .header-bar {
 header .header-bar .logo {
   position: relative;
   left: 32px;
+  color: white;
+  line-height: 56px;
+  font-size: 24px;
+}
+
+header .header-bar .player-login {
+  position: relative;
+  margin-right: 20px;
   color: white;
   line-height: 56px;
   font-size: 24px;
