@@ -18,6 +18,11 @@ const routes = [
     name: "player-login",
     component: () => import("@/views/PlayerLogin.vue")
   },
+  {
+    path: "/player-register",
+    name: "player-register",
+    component: () => import("@/views/PlayerRegister.vue")
+  },
 ];
 
 const router = new VueRouter({
