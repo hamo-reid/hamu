@@ -5,9 +5,9 @@
         <div class="logo">
           Logo
         </div>
-        <dev @click="$router.push('/player-login')" class="player-login">
+        <span @click="$router.push('/player-login')" class="player-login">
           选手登录
-        </dev>
+        </span>
       </div>
       <nav>
 

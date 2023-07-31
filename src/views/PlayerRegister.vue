@@ -1,32 +1,34 @@
 <template>
     <div class="page">
-      <div class="login-card">
-        <div class="card-header">
-          <div class="log">选手登录</div>
+        <div class="register-card">
+            <div class="card-header">
+                <div class="log">注册</div>
+            </div>
+            <div class="form-group">
+                <label for="username">邮箱:</label>
+                <input name="username" type="text">
+            </div>
+            <div class="form-group">
+                <label for="password">密码:</label>
+                <input name="password" type="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmedPassword">再次输入密码:</label>
+                <input name="confirmedPassword" type="password">
+            </div>
+            <div class="form-group">
+                <button>注册</button>
+            </div>
+            <div class="form-group">
+                <span @click="$router.push('/player-login')">转到登录</span>
+            </div>
         </div>
-          <div class="form-group">
-            <label for="username">邮箱:</label>
-            <input name="username" id="username" type="text">
-          </div>
-          <div class="form-group">
-            <label for="password">密码:</label>
-            <input name="password" id="password" type="password">
-          </div>
-          <div class="form-group">
-            <button>登录</button>
-          </div>
-          <div @click="$router.push('/player-register')">
-            <span>注册</span>
-          </div>
-      </div>  
     </div>
     
 </template>
 
 <script>
 export default {
-  name:'PlayerLogin'
-
 
 }
 </script>
@@ -42,7 +44,7 @@ export default {
     background-size: cover;
     
 }
-.login-card {
+.register-card {
     width: 300px;
     padding: 20px;
     margin: 0 auto;
@@ -67,10 +69,6 @@ export default {
   .form-group {
     margin-bottom: 15px;
     
-  }
-  .form-group-register {
-    margin-bottom: 15px;
-    margin-left: 115px;
   }
   
   label {
@@ -104,5 +102,4 @@ export default {
     background-color: #ccc;
     color: black;
   }
-
 </style>
